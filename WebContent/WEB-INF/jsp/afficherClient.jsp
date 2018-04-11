@@ -6,23 +6,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Client</title>
-<link type="text/css" rel="stylesheet" href="<c:url value='css/bootstrap.min.css'/>" />
+<link type="text/css" rel="stylesheet"
+	href="<c:url value='css/bootstrap.min.css'/>" />
 <link type="text/css" rel="stylesheet"
 	href="<c:url value='css/style.css'/>" />
 </head>
 <body>
 
 	<c:import url="./inc/header.jsp"></c:import>
-	
-	<br /><br /><br /><br /><br /><br /><br /><br />
-	
+
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+
 	<c:import url="./inc/nav.jsp"></c:import>
 
-	<p class="info">${ message }</p>
-
-	<c:if test="${ !erreur }">
-	
-		<h3>Client :</h3>
+	<div id="corps">
+		<p class="info">${ form.resultat }</p>
 		<p>
 			Nom :
 			<c:out value="${ client.nom }" />
@@ -36,14 +41,14 @@
 			<c:out value="${ client.adresse }" />
 		</p>
 		<p>
-			Téléphone :
+			Numéro de téléphone :
 			<c:out value="${ client.telephone }" />
 		</p>
 		<p>
 			Email :
 			<c:out value="${ client.email }" />
 		</p>
-	</c:if>
+	</div>
 
 
 </body>

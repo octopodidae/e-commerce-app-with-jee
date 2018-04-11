@@ -1,6 +1,6 @@
 package com.ecommerce.beans;
 
-public class Command {
+public class Commande {
 
     private String date_cmd;
     private String mode_paiement;
